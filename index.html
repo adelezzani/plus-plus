@@ -104,6 +104,29 @@
         border: 1px solid rgba(255, 255, 255, 0.08);
       }
 
+      .footer-links {
+        margin-top: 14px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .footer-links a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 14px;
+        border-radius: 999px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(255, 255, 255, 0.04);
+        color: rgba(255, 255, 255, 0.9);
+        text-decoration: none;
+      }
+
+      .footer-links a:hover {
+        border-color: var(--accent);
+      }
+
       @media (max-width: 640px) {
         .shell {
           padding: 8px;
@@ -127,6 +150,10 @@
           <span class="pill">TMDB-ready</span>
           <span class="pill">GitHub Pages</span>
           <span class="pill">Public website</span>
+        </div>
+        <div class="footer-links">
+          <a href="/terms.html">Terms of Use</a>
+          <a href="/privacy.html">Privacy Policy</a>
         </div>
       </section>
     </main>
